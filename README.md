@@ -3,7 +3,7 @@
 Servidor SMB personalizado en Python construido sobre la librería Impacket.  
 Permite levantar rápidamente un recurso compartido SMB configurable por línea de comandos e incluye logging personalizado de conexiones mediante hooks internos.
 
-Proyecto orientado a laboratorio, aprendizaje e instrumentación del funcionamiento interno del servidor SMB de Impacket.
+Proyecto orientado al aprendizaje del funcionamiento interno del servidor SMB de Impacket.
 
 
 ## Características
