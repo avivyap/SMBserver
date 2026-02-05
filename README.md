@@ -5,7 +5,6 @@ Permite levantar rápidamente un recurso compartido SMB configurable por línea 
 
 Proyecto orientado a laboratorio, aprendizaje e instrumentación del funcionamiento interno del servidor SMB de Impacket.
 
----
 
 ## Características
 
