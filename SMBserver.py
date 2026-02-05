@@ -16,9 +16,9 @@ signal.signal(signal.SIGINT, def_handler)
 
 def args():
 	parser=argparse.ArgumentParser(description="Custom SMB Server")
-	parser.add_argument("-n", "--new", dest="new", type=str, required=True, help="Name of the new folder you are going to create and share")
-	parser.add_argument("-r", "--route", dest="route", type=str, required=True, help="The route where the SMB service will be set up")
-	parser.add_argument("-p", "--port", dest="port", type=int, help="The port where the service will be set up", default=445)
+	parser.add_argument("-n", "--new", dest="new", type=str, required=True, help="Nombre de la nueva carpeta que vas a crear y compartir")
+	parser.add_argument("-r", "--route", dest="route", type=str, required=True, help="La ruta donde se montará el servicio SMB")
+	parser.add_argument("-p", "--port", dest="port", type=int, help="El puerto donde se alojará el servicio", default=445)
 
 	options = parser.parse_args()
 	return options
@@ -40,7 +40,7 @@ class MySMBServer(smbserver.SimpleSMBServer): #subclass
 
             if connId not in self.vistas: #anti-spam
                 ip = data.get("ClientIP", "UNKNOWN")
-                print(colored(f"\n[+] Cliente SMB activo desde {ip}\n",'green'))
+                print(colored(f"\n[+] Se ha conectado el cliente {ip}\n",'green'))
                 self.vistas.add(connId) #save as seen
 
             return data
