@@ -1,5 +1,8 @@
 #!/usr/share/env python3
 
+#sudo python3 SMBserver.py -n aviv -r /home/avivyap/proof 
+#\\10.10.10.10\aviv\
+
 import signal
 import sys
 import argparse
@@ -12,7 +15,7 @@ def def_handler(sig, frame):
 	print(colored("\n[!] Saliendo...\n",'red'))
 	sys.exit(1)
 
-signal.signal(signal.SIGINT, def_handler)
+signal.signal(signal.SIGINT, def_handler) #ctrl + c 
 
 def args():
 	parser=argparse.ArgumentParser(description="Custom SMB Server")
