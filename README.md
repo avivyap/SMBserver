@@ -1,4 +1,4 @@
-# Custom SMB Server (Impacket)
+# Custom SMB Server 
 
 Servidor SMB personalizado en Python construido sobre la librería Impacket.  
 Permite levantar rápidamente un recurso compartido SMB configurable por línea de comandos e incluye logging personalizado de conexiones mediante hooks internos.
