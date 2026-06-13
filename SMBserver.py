@@ -1,4 +1,4 @@
-#!/usr/share/env python3
+#!/usr/bin/env python3
 
 #sudo python3 SMBserver.py -f aviv -r /home/avivyap/proof
 #\\10.10.10.10\aviv\
